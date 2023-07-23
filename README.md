@@ -19,7 +19,7 @@ Book is more oriented to C and C++ secure coding. Repository will contain only c
 - ```unsafe_sizeof::dowork()``` -- outputs an example of sizeof after the array declaration and after array passing in clear(int array[]);
 - ```unsafe_sizeof::clear(int array[])``` -- outputs the sizeof of given array and its incorrect calculated length in result. 
 #### Example:
-```unsafe::dowork();```
+```unsafe_sizeof::dowork();```
 #### Output:
 ```
 sizeof(int*): 8
