@@ -15,7 +15,24 @@ Book is more oriented to C and C++ secure coding. Repository will contain only c
 ### 2.1. Character strings
 ### unsafe_sizeof.cpp
 > You should not use sizeof for given array, because it will return pointer size, instead of size of an actual array, therefore it will misscalculate your array size and it will lead to unexpected behavior. You should give size of your array in function parameters.
-
 #### Functions:
-- ```unsafe_sizeof::dowork()``` -- will show in console example of sizeof after array declaration and after array passing in clear(int array[]);
-- ```unsafe_sizeof::clear(int array[])``` -- will show in console sizeof of given array and its incorrect calculated length. 
+- ```unsafe_sizeof::dowork()``` -- outputs an example of sizeof after the array declaration and after array passing in clear(int array[]);
+- ```unsafe_sizeof::clear(int array[])``` -- outputs the sizeof of given array and its incorrect calculated length in result. 
+#### Example:
+```unsafe::dowork();```
+#### Output:
+```
+sizeof(int*): 8
+sizeof(int): 4
+sizeof(int*)/sizeof(int): 2
+
+int dis[12]; // inside dowork()
+sizeof(array): 48
+sizeof(array[0]): 4
+sizeof(array)/sizeof(array[0]): 12
+
+// inside clear(int array[])
+sizeof(array): 8
+sizeof(array[0]): 4
+sizeof(array)/sizeof(array[0]): 2
+```
