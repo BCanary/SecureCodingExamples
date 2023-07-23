@@ -4,6 +4,7 @@
 
 int main() 
 {
-    unsafe_sizeof::dowork();
+    //unsafe_sizeof::dowork();
+    
     return 0;
 }

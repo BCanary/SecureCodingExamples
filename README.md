@@ -36,3 +36,11 @@ sizeof(array): 8
 sizeof(array[0]): 4
 sizeof(array)/sizeof(array[0]): 2
 ```
+#### Solution:
+Precalculate or store array size and pass it to the function manually.
+**Example:**
+```
+const size_t DIS_SIZE = 12;
+int dis[DIS_SIZE];
+clear(DIS_SIZE, dis);
+```
